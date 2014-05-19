@@ -36,9 +36,9 @@
    * `<tr><td height="1" width="560"><img src="https://s3.amazonaws.com/dh-ctc-rd2/spacer.gif" height="1" width="560" style="border: 0; display: block; min-width: 560px;"/></td></tr>`
 * Bulletproof usage of preheader text
  * **CSS**
- * `.preheader {display: none !important; font-size: 0 !important; height: 0 !important; line-height: 0 !important; margin: 0 !important; max-height: 0 !important; mso-hide: all; opacity: 0 !important; padding: 0 !important; width: 0 !important;}`		
+  * `.preheader {display: none !important; font-size: 0 !important; height: 0 !important; line-height: 0 !important; margin: 0 !important; max-height: 0 !important; mso-hide: all; opacity: 0 !important; padding: 0 !important; width: 0 !important;}`		
  * **HTML**
- * `<table align="center" border="0" cellpadding="0" cellspacing="0" height="0" width="0" style="border: 0; height: 0; mso-hide: all; width: 0;">
+  * `<table align="center" border="0" cellpadding="0" cellspacing="0" height="0" width="0" style="border: 0; height: 0; mso-hide: all; width: 0;">
   <tr>
     <td border="0" height="0" width="0" style="border: 0; height: 0; mso-hide: all; width: 0;">
       <span class="preheader" style="display: none !important; font-size: 0 !important; height: 0 !important; line-height: 0 !important; margin: 0 !important; max-height: 0 !important; mso-hide: all !important; opacity: 0 !important; padding: 0 !important; width: 0 !important;">Find top rated classes and degree programs in your area today. Our team reviews thousands of programs to find the best match for you.</span>
