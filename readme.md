@@ -18,7 +18,7 @@
  * `<td><span style=”font-size: 12px”>I should be 12px</span></td>`
  * If the cell contains an ASCII character (such as &#149;), you may have to also wrap the text with a span
 * Apply spacing for buttons on the containing TD cell
- * <td style=”padding: 10px 12px;”>
+ * `<td style=”padding: 10px 12px;”>`
  * Be aware that Outlook 2013 is tempermental with using “padding: 10px 20px” as opposed to `“padding: 10px 20px 10px 20px”`
  * For Outlook 2013 (and essentially all clients), it’s best to create 
 * Avoid scaling of images with Gmail (Android App) when width is > the screen resolution
@@ -46,7 +46,7 @@
   </tr>
 </table>`
 * If setting a border/border-radius on a table element, the border will not adhere to the border-radius in Explorer based environments
- * Example: http://i.imgur.com/OT6VQp9.jpg
-  * Litmus discussion on the bug
+ * Example: [http://i.imgur.com/OT6VQp9.jpg](http://i.imgur.com/OT6VQp9.jpg)
+  * [Litmus discussion on the bug](https://litmus.com/community/learning/28-pairing-border-size-style-color-with-border-radius-x-in-explorer-browsers)
 
 
