@@ -1,14 +1,14 @@
 #### Email Template Repository
 * Small repository of responsive and standard sized email templates built for clients
 
-# Name Format
+#### Name Format
 * type-pixel-name
 
-## Type Key
+#### Type Key
 * `resp` = responsive
 * `stnd` = standard size (non-responsive)
 
-## Useful HTML Email Discoveries
+#### Useful HTML Email Discoveries
 * Check for non-HTML characters
  * Apostrophes, single & double quotes, bullet characters, etc
  * Do not copy/paste from Microsoft Word and ignore updating these characters
