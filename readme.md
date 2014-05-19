@@ -10,17 +10,17 @@
 - `stnd` = standard size (non-responsive)
 
 ## Useful HTML Email Discoveries
-- Check for non-HTML characters
--- Apostrophes, single & double quotes, bullet characters, etc
--- Do not copy/paste from Microsoft Word and ignore updating these characters
-- Apply styling for containing cell text to the parent cell
--- `<td style=”font-size: 12px”>I should be 12 px</td>` instead of…
--- `<td><span style=”font-size: 12px”>I should be 12px</span></td>`
--- If the cell contains an ASCII character (such as &#149;), you may have to also wrap the text with a span
-- Apply spacing for buttons on the containing TD cell
--- <td style=”padding: 10px 12px;”>
--- Be aware that Outlook 2013 is tempermental with using “padding: 10px 20px” as opposed to `“padding: 10px 20px 10px 20px”`
--- For Outlook 2013 (and essentially all clients), it’s best to create 
+* Check for non-HTML characters
+ * Apostrophes, single & double quotes, bullet characters, etc
+ * Do not copy/paste from Microsoft Word and ignore updating these characters
+* Apply styling for containing cell text to the parent cell
+ * `<td style=”font-size: 12px”>I should be 12 px</td>` instead of…
+ * `<td><span style=”font-size: 12px”>I should be 12px</span></td>`
+ * If the cell contains an ASCII character (such as &#149;), you may have to also wrap the text with a span
+* Apply spacing for buttons on the containing TD cell
+ * <td style=”padding: 10px 12px;”>
+ * Be aware that Outlook 2013 is tempermental with using “padding: 10px 20px” as opposed to `“padding: 10px 20px 10px 20px”`
+ * For Outlook 2013 (and essentially all clients), it’s best to create 
 - Avoid scaling of images with Gmail (Android App) when width is > the screen resolution
 -- If an image exceeds 350px in width, break it into two separate images to prevent the Gmail App on Android from scaling the image and breaking the template
 - Outlook 2013 has issues with validating padding 
