@@ -49,7 +49,7 @@
   * [Litmus discussion on the bug](https://litmus.com/community/learning/28-pairing-border-size-style-color-with-border-radius-x-in-explorer-browsers)
 
 
-## Useful HTML Email Discoveries
+#### Useful HTML Email Discoveries
 - Check for non-HTML characters
 -- Apostrophes, single & double quotes, bullet characters, etc
 -- Do not copy/paste from Microsoft Word and ignore updating these characters
