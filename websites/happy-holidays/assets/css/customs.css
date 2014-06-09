@@ -1,0 +1,587 @@
+/* GOBOLD */
+@font-face {
+  font-family: 'Gobold';
+  src: url('../fonts/Gobold.eot');
+  src: url('../fonts/Gobold.eot#iefix') format('embedded-opentype'),
+     url('../fonts/Gobold.eot?') format('eot'),
+     url('../fonts/Gobold.woff') format('woff'),
+     url('../fonts/Gobold.ttf') format('truetype'),
+     url('../fonts/Gobold.svg#Gobold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* MOTION PICTURE */
+@font-face {
+  font-family: 'MotionPicture';
+  src: url('../fonts/MotionPicture.eot');
+  src: url('../fonts/MotionPicture.eot#iefix') format('embedded-opentype'),
+     url('../fonts/MotionPicture.eot?') format('eot'),
+     url('../fonts/MotionPicture.woff') format('woff'),
+     url('../fonts/MotionPicture.ttf') format('truetype'),
+     url('../fonts/MotionPicture.svg#MotionPicture') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+footer {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+footer .landingpage {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer .landingpage p.pull-right {font-weight: bold;}
+.container {padding: 0;}
+
+/* top introduction */
+.page-header h4 {
+  font-style: italic;
+  color: #99999B;
+  font-size: 16px;
+}
+
+.page-header .button {
+  text-align: center;
+  text-transform: uppercase;
+}
+.page-header .button .btn-shawmut {font-size: 22px;}
+
+span.superset {font-size: 10px; position: relative; top: -4px; left: 1px;}
+
+.blurb {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0;
+  padding: 40px 0 0;
+  background: #000000; /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM1YzVjNWMiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-radial-gradient(center, ellipse cover, #5c5c5c 0%, #000000 100%); /* FF3.6+ */
+  /* background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#5c5c5c), color-stop(100%,#000000)); Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, #5c5c5c 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, #5c5c5c 0%,#000000 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, #5c5c5c 0%,#000000 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center, #5c5c5c 0%,#000000 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c5c5c', endColorstr='#000000',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+}
+
+.blurb h2 {
+  font-family: "Gobold", Arial, sans-serif;
+  color: white;
+  font-size: 32px;
+  text-transform: uppercase;
+  margin: 0 0 4px;
+  text-shadow: 1px 1px 1px black, 3px 3px 1px rgb(220,40,30);
+  padding-bottom: 6px;
+  letter-spacing: 3px;
+}
+.blurb h3 {
+  font-family: "MotionPicture", Arial, sans-serif;
+  color: white;
+  font-size: 200px;
+  margin: -10px 0 0;
+  padding-bottom: 0;
+}
+.blurb h2,
+.blurb h3 {margin-left: 20px;}
+
+.blurb p {
+  font-size: 24px;
+  color: #99999B;
+  font-style: italic;
+  text-shadow: 1px 1px 1px white;
+  margin: 0;
+}
+
+.ribbon {
+  /*  This ribbon is based on a 16px font side and a 24px vertical rhythm. 
+    I've used em's to position each element for scalability. 
+    If you want to use a different font size you may have to play with 
+    the position of the ribbon elements 
+  */
+  font-size: 16px !important;
+  width: 300px;
+  position: relative;
+  background: #ec2027;
+  color: #fff;
+  text-align: center;
+  padding: 1em 2em; /* Adjust to suit */
+  margin: 0 auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+.ribbon span {
+  font-family: "Gobold", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.ribbon:before,
+.ribbon:after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -24px;
+  border: 1.5em solid #c1272d;
+  z-index: -1;
+}
+.ribbon:before {
+  left: -40px;
+  border-right-width: 2.5em;
+  border-left-color: transparent;
+}
+.ribbon:after {
+  right: -40px;
+  border-left-width: 2.5em;
+  border-right-color: transparent;
+}
+.ribbon .ribbon-content:before,
+.ribbon .ribbon-content:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #821430 transparent transparent transparent;
+  bottom: -1em;
+}
+.ribbon .ribbon-content:before {
+  left: 0;
+  border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+  right: 0;
+  border-width: 1em 1em 0 0;
+}
+.non-semantic-protector {
+  position: relative;
+  z-index: 1;
+}
+
+.cta-small {
+  border: 1px solid #dbdbdb;
+  padding: 14px 10px;
+  width: 390px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  font-family: "Gobold", Arial, sans-serif;
+  color: black;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: white;
+  z-index: 1;
+}
+.cta-small img {
+  position: absolute;
+  top: -6px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+.cta-small p {
+  margin: 0;
+  padding: 0;
+}
+
+.partners {
+  border: 1px solid #dbdbdb;
+  padding: 60px 30px 30px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  color: black;
+  font-size: 13px;
+  margin-bottom: 20px;
+  top: -35px;
+}
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  height: 0; 
+  clear: both;
+}
+
+.partners .col-left a,
+.partners .col-right a {
+  text-transform: uppercase;
+}
+.partners .col-left {
+  width: 50%;
+  border-right: 1px solid #dbdbdb;
+  float: left;
+  padding-right: 10px;
+}
+
+.partners .col-right {
+  width: 50%;
+  float: right;
+  padding-left: 30px;
+}
+
+.bottom {
+  border-top: 1px dotted darkgrey;
+  margin-bottom: 10px;
+}
+.bottom p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+}
+.bottom h2 {font-size: 28px;}
+.bottom button {margin: 14px 14px 0 0;}
+.bottom button .glyphicon {
+  margin-right: 6px;
+  top: 2px;
+}
+.bottom a,
+.bottom a:hover,
+.bottom a:active,
+.bottom a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.bottom p.address {
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 3px;
+  padding-top: 14px;
+}
+
+.marketing .page-header {
+  margin: 0 0 24px;
+  border-bottom: none;
+}
+.marketing .page-header h3 {margin-top: 0;}
+.marketing .center-float {
+  text-align: center;
+  margin: 0 auto;
+  width: 655px;
+}
+.marketing .page-header p {
+  margin-bottom: 0;
+  color: black;
+  float: left;
+  padding: 10px 10px 10px 0;
+  margin-right: 10px;
+  border-right: 1px solid #dbdbdb;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1.4;
+  width: 580px;
+}
+.marketing .page-header .shawlogo img {
+  width: 65px;
+  height: auto;
+}
+/* copyright text */
+footer {
+  background-color: #b1b3b5;
+  color: white;
+  font-size: 13px;
+}
+footer a,
+footer a:hover,
+footer a:active,
+footer a:hover {
+  color: white;
+  text-decoration: none;
+}
+footer p.disclaimer {}
+
+/* Social media icons */
+.social li {
+  background: url('../imgs/spr-social-sharing-40x40.png') no-repeat 0 0 transparent;
+  width: 40px;
+  height: 40px;
+  margin-right: 6px;
+  float: left;
+  display: inline-block;
+}
+.social .facebook {background-position: 0 0;}
+.social .twitter {background-position: -40px 0;}
+.social .pinterest {background-position: -80px 0;}
+.social .instagram {background-position: -120px 0;}
+.social .youtube {background-position: -160px 0;}
+.social .linkedin {background-position: -200px 0;}
+.social .google {background-position: -240px 0;}
+.social li a {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  text-decoration: none;
+}
+.social li a:hover {text-decoration: none;}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: relative;
+  z-index: 15;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* carousel base class */
+.carousel {margin-top: -90px;}
+
+/* since positioning the image, we need to help out the caption */
+.minified {
+  padding: 8px;
+  bottom: auto;
+  top: 100px;
+  width: 225px;
+  margin: 0 auto;
+  text-align: center;
+}
+.minified p {
+  font-size: 12px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* pad the edges of the mobile views a bit */
+.marketing {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.marketing h2 {font-weight: normal;}
+
+.marketing .row {margin: 0;}
+
+/* center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  text-align: center;
+  margin-bottom: 0;
+}
+.marketing .col-lg-4 a {display: inline-block;}
+.marketing .col-lg-4 p {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+
+.fourcol .col-lg-4 h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.fourcol .col-lg-4 p {
+  color: #99999B;
+  font-style: italic;
+}
+.fourcol .featurette:last-of-type {margin-bottom: 40px;}
+
+/* --------------------------
+/* RESPONSIVE CSS
+----------------------------- */
+
+/* iPhone/Mobile */
+@media (max-width: 767px) {
+  
+  /* Introduction Header */
+  .blurb h2 {font-size: 18px;}
+  .blurb h3 {font-size: 110px;}
+  
+  /* Ribbon */
+  .ribbon {width: 220px;}
+  .ribbon span {font-size: 16px}
+  .ribbon:before {
+    left: -30px;
+    bottom: -16px;
+    border-left-width: 30px;
+    border: 23px solid #c1272d;
+    border-left-color: transparent;
+  }
+  .ribbon:after {
+    right: -30px;
+    bottom: -16px;
+    border-right-width: 30px;
+    border: 23px solid #c1272d;
+    border-right-color: transparent;
+  }
+  
+  /* Slogan Text */
+  .marketing .center-float {width: 100%;}
+  .marketing .page-header p {
+    padding: 0;
+    margin-right: 0;
+    border-right: none;
+    float: none;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 1.4;
+    width: auto;
+  }
+  .marketing .page-header .shawlogo-mobile {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #dbdbdb;
+    text-align: center;
+    padding-bottom: 10px;
+    margin: 0 auto 10px;
+  }
+  .marketing .page-header .shawlogo-mobile img {
+    display: block;
+    width: 80px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .marketing .page-header .shawlogo {display: none;}
+  
+  /* Asterik Box */
+  .cta-small {
+    width: 250px;
+    font-size: 16px;
+  }
+  
+  /* Partners Box */
+  .partners {width: 95%;}
+  .partners .col-left,
+  .partners .col-right {
+    width: 100%;
+    float: none;
+    border: none;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  
+  .page-header:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+  footer {
+    padding: 14px;
+    height: 100%;
+  }
+  footer .landingpage {
+    height: 120px;
+    text-align: center;
+  }
+  footer .landingpage p.pull-right {display: none;}
+  footer .landingpage p span.copy {
+    display: block;
+    padding-bottom: 8px;
+  }
+  footer .landingpage p span {
+    display: block;
+    clear: left;
+    padding-bottom: 4px;
+  }
+  
+  /* Social Icon Handling */
+  ul.social {
+    float: none !important;
+    text-align: center;
+    margin: 0 auto 6px;
+    padding: 0;
+    display: block;
+    width: 278px;
+    height: 40px;
+  }
+}
+
+/* iPad/Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  
+  /* Slogan Text */
+  .marketing .center-float {width: 100%;}
+  .marketing .page-header p {
+    padding: 0;
+    margin-right: 0;
+    border-right: none;
+    float: none;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 1.4;
+    width: auto;
+  }
+  .marketing .page-header .shawlogo-mobile {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #dbdbdb;
+    text-align: center;
+    padding-bottom: 10px;
+    margin: 0 auto 10px;
+  }
+  .marketing .page-header .shawlogo-mobile img {
+    display: block;
+    width: 80px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .marketing .page-header .shawlogo {display: none;}
+  
+  /* Partners Box */
+  .partners {width: 100%;}
+  
+  /* Remove the edge padding needed for mobile */
+  .marketing {padding: 10px 10px 30px;}
+  
+  /* Re-organize the bubbles */
+  .marketing .col-lg-4 {
+    width: 50%;
+    float: left;
+    margin-bottom: 40px;
+  }
+  
+  .fourcol .featurette-heading {
+    margin-top: 20px;
+    font-size: 28px;
+  }
+  
+  /* Footer settings */
+  footer .landingpage {max-width: 750px;}
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  
+  /* Slogan Text */
+  .marketing .page-header .shawlogo-mobile {display: none;}
+  
+  /* Footer settings */
+  footer .landingpage {max-width: 970px;}
+}
+
+/* Large Desktop */
+@media (min-width: 1200px) {
+  
+  /* Slogan Text */
+  .marketing .page-header .shawlogo-mobile {display: none;}
+  
+  /* Footer settings */
+  footer .landingpage {max-width: 930px;}
+}

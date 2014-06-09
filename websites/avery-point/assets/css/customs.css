@@ -1,0 +1,504 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+
+/* lighter body text */
+body {color: #5a5a5a;}
+
+footer {
+  /*height: 80px;*/
+  padding-top: 14px;
+  padding-bottom: 14px;
+  /*background-color: #d0d0d0;*/
+  /*border-top: 1px dotted darkgrey;*/
+  /*box-shadow: 1px 0px 5px lightgrey;*/
+}
+
+footer .landingpage {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer .landingpage p.pull-right {font-weight: bold;}
+.container {padding: 0;}
+
+.navbar {
+  min-height: 0;
+  height: auto\9;
+}
+
+.navbar > .container .navbar-brand {
+  padding: 0;
+  margin-left: 0;
+  margin-left: 0;
+}
+
+.container > .navbar-header {
+  position: absolute;
+  padding: 0;
+  height: 110px;
+  width: 97px;
+  display: block;
+  left: 10px;
+  top: -10px;
+}
+
+.container > .navbar-collapse {
+  margin-left: 108px; /* 1px extra to create red line separation from logo */
+  padding-left: 0;
+}
+
+.navbar-inverse .navbar-nav > li > a {text-shadow: 1px 1px 1px rgba(0,0,0,0.5);}
+
+/* Fix fadeIn/fadeOut not working in IE8 */
+.bubbles,
+.bubbles .col-lg-4
+.bubbles .col-lg-4 a,
+.bubbles .col-lg-4 a span {filter:inherit;}
+
+.col-lg-4 div {
+  zoom: 1;
+  display: inline-block;
+  position: relative;
+  text-indent: -9999px;
+  width: 140px;
+  height: 140px;
+  background: url('../imgs/spr-averypoint-102013.png') no-repeat;
+}
+
+.col-lg-4 .building-community {background: url('../imgs/spr-averypoint-102013.png') no-repeat top left transparent}
+.col-lg-4 .expecting-the-unexpected {background: url('../imgs/spr-averypoint-102013.png') no-repeat -140px 0px transparent}
+.col-lg-4 .leed-silver {background: url('../imgs/spr-averypoint-102013.png') no-repeat -0px -140px transparent}
+.col-lg-4 .your-turn {background: url('../imgs/spr-averypoint-102013.png') no-repeat -140px -140px transparent}
+
+.col-lg-4 a[href*="#"] span {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url('../imgs/spr-averypoint-102013.png') no-repeat;
+}
+.col-lg-4 a[href*="building-community"] span {background-position: 0px -280px;}
+.col-lg-4 a[href*="expecting-the-unexpected"] span {background-position: -140px -280px;}
+.col-lg-4 a[href*="leed-silver"] span {background-position: 0px -420px;}
+.col-lg-4 a[href*="your-turn"] span {background-position: -140px -420px;}
+
+.col-lg-4 a[href*="#"]:hover span {opacity: 1;}
+
+.page-header h4 {
+  font-style: italic;
+  color: #99999B;
+  font-size: 16px;
+}
+
+.page-header .button {
+  text-align: center;
+  text-transform: uppercase;
+}
+.page-header .button .btn-shawmut {font-size: 22px;}
+/*
+.col-lg-4 h2.row1, .page-header h3.row1 {color: #0f1938;}
+.col-lg-4 h2.row2, .page-header h3.row2 {color: #db2b27;}
+.col-lg-4 h2.row3, .page-header h3.row3 {color: #6bc16b;}
+.col-lg-4 h2.row4, .page-header h3.row4 {color: #f89f1f;}
+*/
+span.superset {font-size: 10px; position: relative; top: -4px; left: 1px;}
+body .blurb {
+  width: 100%;
+  border-bottom: 1px dotted darkgrey;
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 40px 0;
+  background-color: #eeeeee;
+  box-shadow: 0px 0px 5px lightgrey;
+}
+body .blurb h2 {
+  color: rgb(220,40,30);
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 0 4px;
+  text-shadow: 1px 1px 1px white;
+  padding-bottom: 6px;
+  border-bottom: 1px dashed lightgrey;
+  display: inline-block;
+}
+body .blurb p {
+  font-size: 24px;
+  color: #99999B;
+  font-style: italic;
+  text-shadow: 1px 1px 1px white;
+  margin: 0;
+}
+
+body .bottom {
+  border-top: 1px dotted darkgrey;
+  margin-bottom: 10px;
+}
+body .bottom p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+}
+body .bottom h2 {
+  font-size: 28px;
+}
+body .bottom button {
+  margin: 14px 14px 0 0;
+}
+body .bottom button .glyphicon {
+  margin-right: 6px;
+  top: 2px;
+}
+body .bottom a,
+body .bottom a:hover,
+body .bottom a:active,
+body .bottom a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+/*body .bottom span.phone,
+body .bottom span.email {padding-left: 14px;}*/
+body .bottom p.address {
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 3px;
+  padding-top: 14px;
+}
+
+body .fixed {
+  margin-top: 0;
+  width: 100%;
+}
+body .fixed .fixedbar {
+  width: 100%;
+  background-color: #DC291E;
+  border-color: #B0241C;
+  box-shadow: 0px 0px 5px black;
+}
+.navbar-inverse {
+  background: transparent;
+  border-color: transparent;
+}
+body .fixed .fixedbar .navbar-static-top {
+  /*width: 75%;*/
+  margin: 0 auto;
+}
+
+a[href*="lets-talk"] {
+  height: 50px;
+  width: 150px;
+  float: right;
+  text-align: center;
+  background-color: white;
+  display: inline-block;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 15px solid #DC291E;
+}
+a[href*="lets-talk"] span {
+  font-size: 18px;
+  font-weight: bold;
+  /*padding: 15px 0;*/
+  display: inline-block;
+  text-transform: uppercase;
+  position: relative;
+  top: -10px;
+  text-shadow: 1px 1px 0 #eeeeee;
+}
+.marketing .page-header {
+  margin: 0 0 40px;
+  padding-bottom: 40px;
+}
+.marketing .page-header h3 {margin-top: 0;}
+.marketing .page-header p {margin-bottom: 0;}
+
+.marketing div.last {border-bottom: none;}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: relative;
+  z-index: 15;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  /*margin-bottom: 60px;*/
+
+  /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+  margin-top: -90px;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  background-color: rgba(0,0,0,0.4);
+  background: url('/assets/css/1x1-bg.png') repeat top left transparent;
+  padding: 14px 20px 16px 20px;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.3);
+  border: 1px solid black;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 5px;
+}
+body .minified {
+  padding: 8px;
+  bottom: auto;
+  top: 100px;
+  width: 225px;
+  margin: 0 auto;
+  text-align: center;
+}
+body .minified p {
+  font-size: 12px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.marketing h2 {font-weight: normal;}
+
+.marketing .row {margin: 0;}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  text-align: center;
+  margin-bottom: 0;
+}
+.marketing .col-lg-4 a {display: inline-block;}
+
+.marketing .col-lg-4 p {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+.fourcol .col-lg-4 h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.fourcol .col-lg-4 p {
+  color: #99999B;
+  font-style: italic;
+}
+.fourcol .featurette:last-of-type {margin-bottom: 40px;}
+
+
+/* Featurettes
+------------------------- */
+
+/* Space out the Bootstrap <hr> more */
+.featurette-divider {margin: 50px 0 40px;}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+/* iPhone/Mobile */
+@media (max-width: 767px) {
+  .carousel .item {height: 240px;}
+  .carousel-inner > .item > img {height: 240px;}
+  
+  .marketing .col-lg-4 {
+    margin-bottom: 40px;
+  }
+  .marketing .row .col-lg-4:nth-child(4) {margin-bottom: 0;}
+  
+  footer {
+    padding: 14px;
+    height: 100%;
+  }
+  footer .landingpage {
+    height: 120px;
+    text-align: center;
+  }
+  footer .landingpage p.pull-right {display: none;}
+  footer .landingpage p span.copy {
+    display: block;
+    padding-bottom: 8px;
+  }
+  footer .landingpage p span {
+    display: block;
+    clear: left;
+    padding-bottom: 4px;
+  }
+  
+  .container > .navbar-header {
+    margin: 0;
+    width: auto;
+    padding: 0 0 0 8px;
+  }
+  
+  .navbar-brand img {
+    height: 80px;
+    width: 69px;
+  }
+  .carousel-control .glyphicon {padding-top: 14px;}
+  .container > .navbar-collapse {
+    margin-top: 90px;
+    margin-left: 0;
+  }
+  .container > .navbar-collapse .nav {padding-left: 8px;}
+  
+  /* Align bubbles in the center */
+  .fourcol .col-md-5 {text-align: center;}
+  
+  /* Re-position the navigation button */
+  .navbar-inverse .navbar-toggle {top: 8px;}
+  
+  body .blurb h2 {font-size: 24px;}
+  body .blurb p {
+    font-size: 16px;
+    padding: 0 14px;
+  }
+  .page-header:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+  body .fixed .fixedbar .navbar-static-top {width: 100%;}
+  
+  body .minified p {font-size: 12px;}
+  
+  body .bottom h2 {padding: 0 8px 6px;}
+  
+  .carousel-indicators {bottom: -6px;}
+  .carousel-control .glyphicon-chevron-left {left: 20%;}
+  .carousel-control .glyphicon-chevron-right {left: 50%;}
+}
+
+/* iPad/Table */
+@media (min-width: 768px) {
+
+  footer .landingpage {max-width: 750px;}
+  .lead {font-size: 16px;}
+
+  /* Remove the edge padding needed for mobile */
+  .marketing {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {margin-top: 20px;}
+  
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {border-radius: 4px;}
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {font-size: 50px;}
+  
+  /* Re-organize the bubbles */
+  .marketing .col-lg-4 {
+    width: 50%;
+    float: left;
+    margin-bottom: 40px;
+  }
+  .marketing .row .col-lg-4:nth-child(3),
+  .marketing .row .col-lg-4:nth-child(4) {margin-bottom: 0;}
+  
+  .navbar-nav > li > a {
+    font-size: 13px;
+  }
+  
+  .carousel .item {height: 400px;}
+  .carousel-inner > .item > img {height: 400px;}
+  
+  .fourcol .col-md-5 {text-align: center;}
+  .fourcol .featurette-heading {
+    margin-top: 20px;
+    font-size: 28px;
+  }
+  body .fixed .fixedbar .navbar-static-top {max-width: 750px;}
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+
+  /* Footer settings */
+  footer .landingpage {max-width: 970px;}
+  
+  /* Featurette heading spacing */
+  .featurette-heading {margin-top: 120px;}
+  
+  /* Re-organize the bubbles */
+  .marketing .col-lg-4 {
+    width: 50%;
+    float: left;
+    margin-bottom: 40px;
+  }
+  
+  /* Styles for the slider settings */
+  .carousel .item {height: 500px;}
+  .carousel-inner > .item > img {height: 500px;}
+  
+  /* Feature styles for Avery Point custom template */
+  .fourcol .col-md-5 {width: 170px;}
+  .fourcol .col-md-7 {width: 80%;}
+  
+  
+  .fourcol .featurette-heading {
+    margin-top: 0;
+    font-size: 24px;
+  }
+  body .fixed .fixedbar .navbar-static-top {max-width: 970px;}
+}
+
+/* Large Desktop */
+@media (min-width: 1200px) {
+
+  /* Footer settings */
+  footer .landingpage {max-width: 1170px;}
+  
+  /* Styles for the slider settings */
+  .marketing .row .col-lg-4 {
+    width: 25%;
+    margin-bottom: 0;
+  }
+  
+  body .fixed .fixedbar .navbar-static-top {max-width: 1170px;}
+}
